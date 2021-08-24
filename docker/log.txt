@@ -1,0 +1,36 @@
+nohup: 忽略输入
+Sending build context to Docker daemon  9.216kB
+Step 1/15 : ARG PYTORCH="1.6.0"
+Step 2/15 : ARG CUDA="10.1"
+Step 3/15 : ARG CUDNN="7"
+Step 4/15 : FROM pytorch/pytorch:${PYTORCH}-cuda${CUDA}-cudnn${CUDNN}-devel
+1.6.0-cuda10.1-cudnn7-devel: Pulling from pytorch/pytorch
+7ddbc47eeb70: Already exists
+c1bbdc448b72: Already exists
+8c3b70e39044: Already exists
+45d437916d57: Already exists
+d8f1569ddae6: Already exists
+85386706b020: Pulling fs layer
+ee9b457b77d0: Pulling fs layer
+be4f3343ecd3: Pulling fs layer
+30b4effda4fd: Pulling fs layer
+b398e882f414: Pulling fs layer
+4fe309685765: Pulling fs layer
+8b87a3cb3232: Pulling fs layer
+6cac8a6cf141: Pulling fs layer
+6cac8a6cf141: Download complete
+ee9b457b77d0: Verifying Checksum
+ee9b457b77d0: Download complete
+4fe309685765: Verifying Checksum
+4fe309685765: Download complete
+85386706b020: Verifying Checksum
+85386706b020: Download complete
+85386706b020: Pull complete
+ee9b457b77d0: Pull complete
+b398e882f414: Verifying Checksum
+b398e882f414: Download complete
+be4f3343ecd3: Verifying Checksum
+be4f3343ecd3: Download complete
+be4f3343ecd3: Pull complete
+8b87a3cb3232: Verifying Checksum
+8b87a3cb3232: Download complete
