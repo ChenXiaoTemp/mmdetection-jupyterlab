@@ -42,3 +42,13 @@ RUN conda install -c conda-forge jupyterlab -y
 ENV HYPC_JUPYTER_LAB_API_TOKEN=x123456789
 
 ADD ./start-notebook.sh /root/start-notebook.sh
+
+RUN apt-get update && apt-get install wget
+
+RUN apt-get install curl -y
+
+SHELL ["/bin/bash", "-c"] 
+
+RUN pip install onnx onnx-simplifier
+# do not install onnxruntime-gpu, onnx-simpliefier current can only use onnxruntime, after onnx converted, then use onnxruntime-gpu to run
+CMD ["sh","/root/start-notebook.sh"]
