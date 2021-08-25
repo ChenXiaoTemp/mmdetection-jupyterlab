@@ -50,5 +50,7 @@ RUN apt-get install curl -y
 SHELL ["/bin/bash", "-c"] 
 
 RUN pip install onnx onnx-simplifier
+
+RUN apt-get install vim -y
 # do not install onnxruntime-gpu, onnx-simpliefier current can only use onnxruntime, after onnx converted, then use onnxruntime-gpu to run
 CMD ["sh","/root/start-notebook.sh"]
